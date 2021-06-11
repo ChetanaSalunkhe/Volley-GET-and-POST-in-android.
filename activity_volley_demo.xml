@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VolleyDemoActivity">
+
+    <LinearLayout
+        android:id="@+id/laybtns"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonget"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#414af4"
+            android:text="GET Request"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonpost"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ff99"
+            android:text="POST Request"
+            android:textColor="#ffffff"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="#dcdcdc"
+        android:layout_below="@+id/laybtns"
+        android:layout_marginTop="20dp"/>
+
+</RelativeLayout>
